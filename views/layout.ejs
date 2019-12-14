@@ -590,7 +590,7 @@ AOS.init();
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyShg.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
-                document.querySelector('.agents').classList.remove('d-none');
+                
     
             }
             function nearbyMicroFin() {
@@ -598,21 +598,21 @@ AOS.init();
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyMf.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
-                document.querySelector('.agents').classList.remove('d-none');
+                
             }
             function nearbyInvestors() {
                 backdiv.classList.remove('bg-dark');
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyInv.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
-                document.querySelector('.agents').classList.remove('d-none');
+                
             }
             function nearbyBanks() {
                 backdiv.classList.remove('bg-dark');
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyBank.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
-                document.querySelector('.agents').classList.remove('d-none');
+                
             }
             function back() {
                 backdiv.classList.add('bg-dark');
@@ -628,10 +628,12 @@ AOS.init();
             }
     
             function ideashare(e,idea){
-                
+                document.querySelector('.agents').classList.remove('d-none');
+                if(text.value==="")
+                alert("Your idea has been shared");
+                else
                 alert("Your idea has been shared : " + text.value);
                 console.log(idea);
-    
             }
 
             function hindi(){
@@ -670,6 +672,11 @@ AOS.init();
             {
                 document.querySelector('.recording-mic').classList.add('d-none');
                 document.querySelector('.recorded-mic').classList.remove('d-none');
+            }
+
+            function add_job(){
+                alert('Job Applied Successfully!');
+                document.querySelector('.job3-dum').classList.remove('d-none')
             }
         </script>
 </body>
