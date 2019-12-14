@@ -333,13 +333,13 @@ footer{
     <section class="english" lang="en">
         <div class="language text-right py-1" >
             <p class="lead font-weight-normal text-muted" style="margin-bottom: 0px !important; font-size: 18px; color: #ffffff !important;">View this website in :&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" onclick="english()">English</button> &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" lang="hi" onclick="hindi()">हिन्दी</button>
-                &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button></p>       
+                &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button>&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">অসমীয়া</button>&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">मराठी</button>&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">ଓରିୟା</button></p>       
         </div>
     </section>
     <section class="hindi d-none" lang="en">
         <div class="language text-right py-1" >
             <p class="lead font-weight-normal text-muted" style="margin-bottom: 0px !important; font-size: 18px; color: #ffffff !important;">इस वेबसाइट को देखें :&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" onclick="english()">English</button> &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" lang="hi" onclick="hindi()">हिन्दी</button>
-                &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button></p>       
+                &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button>&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">অসমীয়া</button>&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">मराठी</button>&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">ଓରିୟା</button></p>       
         </div>
     </section>
         
@@ -590,6 +590,7 @@ AOS.init();
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyShg.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
+                document.querySelector('.agents').classList.remove('d-none');
     
             }
             function nearbyMicroFin() {
@@ -597,18 +598,21 @@ AOS.init();
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyMf.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
+                document.querySelector('.agents').classList.remove('d-none');
             }
             function nearbyInvestors() {
                 backdiv.classList.remove('bg-dark');
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyInv.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
+                document.querySelector('.agents').classList.remove('d-none');
             }
             function nearbyBanks() {
                 backdiv.classList.remove('bg-dark');
                 backdiv.classList.add('ecorner-orange-background');
                 nearbyBank.classList.remove('d-none');
                 buttonArea.classList.add('d-none');
+                document.querySelector('.agents').classList.remove('d-none');
             }
             function back() {
                 backdiv.classList.add('bg-dark');
@@ -620,6 +624,7 @@ AOS.init();
                 nearbyInv.classList.add('d-none');
     
                 buttonArea.classList.remove('d-none');
+                document.querySelector('.agents').classList.add('d-none');
             }
     
             function ideashare(e,idea){
@@ -653,6 +658,18 @@ AOS.init();
                 for (i = 0; i < x.length; i++) {
                     y[i].classList.add('d-none');
                 }
+            }
+
+            function rmic()
+            {
+                document.querySelector('.record-mic').classList.add('d-none');
+                document.querySelector('.recording-mic').classList.remove('d-none');
+            }
+            
+            function rddmic()
+            {
+                document.querySelector('.recording-mic').classList.add('d-none');
+                document.querySelector('.recorded-mic').classList.remove('d-none');
             }
         </script>
 </body>
